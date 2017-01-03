@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Bobby Kingsada
+Assignment 01
+-->
+<html>
+	<head>
+		<title>TEA - REX</title>
+	</head>
+	<body>
+		<h1 align = "center"> Bobby Kingsada </h1> 
+		<p align = "center">
+			<img 	src = "https://samanthalauhuaiee.files.wordpress.com/2015/02/tearexlogo.png" 
+					alt = "Tea tex in a cup" 
+					width = "325" 
+					height = "260">
+		</p>
+		
+		<p id = "message">
+		
+		</p>
+		
+		<script>
+
+		
+		var name = prompt("Please enter your name");
+		var count = prompt("How many cups will you have?");
+		var cupCost = 1 * count;
+		var tax = .09 * count;
+		var total = cupCost + tax;
+		total = total.toFixed(2);
+
+		if (name == null) {
+			alert("Error, you did not enter in a name.");
+			}
+			
+		if (count != null) {
+			document.getElementById("message")
+			document.write(name + ", your total for " + count + " cup(s) of tea is " + total + ".");
+		}
+		else {
+			alert("Error, you did not enter a valid number.");
+		}
+
+		</script>
+		
+	</body>
+</html>
+
